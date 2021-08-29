@@ -1,6 +1,7 @@
-if key == "12345" then
-	
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Side = Instance.new("Frame")
@@ -355,7 +356,7 @@ TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function MBLLMTK_fake_script() -- Side.TabHandler 
+local function CGBRYIV_fake_script() -- Side.TabHandler 
 	local script = Instance.new('LocalScript', Side)
 
 	local settingsbutton = script.Parent.Settings
@@ -364,7 +365,7 @@ local function MBLLMTK_fake_script() -- Side.TabHandler
 	local creditbutton = script.Parent.Credit
 	local creditscreen = script.Parent.Parent.Main.Credits
 	local scriptbutton = script.Parent.Scripts
-	local scriptgui = script.Parent.Scripts
+	local scriptgui = script.Parent.Parent.Scripts
 	local logbutoon = script.Parent.Logs
 	local logscreen = script.Parent.Parent.Main.Logs
 	creditbutton.MouseButton1Click:Connect(function()
@@ -401,8 +402,8 @@ local function MBLLMTK_fake_script() -- Side.TabHandler
 	end)
 	
 end
-coroutine.wrap(MBLLMTK_fake_script)()
-local function XGQGFL_fake_script() -- Main.LocalScript 
+coroutine.wrap(CGBRYIV_fake_script)()
+local function JZSWR_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Home.TextButton.MouseButton1Click:Connect(function()
@@ -415,16 +416,16 @@ local function XGQGFL_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XGQGFL_fake_script)()
-local function QWETGRN_fake_script() -- IY.Scripthandler 
+coroutine.wrap(JZSWR_fake_script)()
+local function JUWJ_fake_script() -- IY.Scripthandler 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(QWETGRN_fake_script)()
-local function UTVFHXG_fake_script() -- ax.Scripthandler 
+coroutine.wrap(JUWJ_fake_script)()
+local function LLULJO_fake_script() -- ax.Scripthandler 
 	local script = Instance.new('LocalScript', ax)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -454,13 +455,12 @@ local function UTVFHXG_fake_script() -- ax.Scripthandler
 	
 	end)
 end
-coroutine.wrap(UTVFHXG_fake_script)()
-local function UECMPXV_fake_script() -- TextButton_2.Scripthandler 
+coroutine.wrap(LLULJO_fake_script)()
+local function NDJIIN_fake_script() -- TextButton_2.Scripthandler 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(UECMPXV_fake_script)()
-end
+coroutine.wrap(NDJIIN_fake_script)()
