@@ -358,7 +358,7 @@ TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function BXYGZ_fake_script() -- Side.TabHandler 
+local function GXUE_fake_script() -- Side.TabHandler 
 	local script = Instance.new('LocalScript', Side)
 
 	local settingsbutton = script.Parent.Settings
@@ -404,8 +404,8 @@ local function BXYGZ_fake_script() -- Side.TabHandler
 	end)
 	
 end
-coroutine.wrap(BXYGZ_fake_script)()
-local function PEKF_fake_script() -- Main.LocalScript 
+coroutine.wrap(GXUE_fake_script)()
+local function SQNCM_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Home.TextButton.MouseButton1Click:Connect(function()
@@ -418,22 +418,19 @@ local function PEKF_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PEKF_fake_script)()
-local function QAQUND_fake_script() -- IY.Scripthandler 
+coroutine.wrap(SQNCM_fake_script)()
+local function ZETSKV_fake_script() -- IY.Scripthandler 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(QAQUND_fake_script)()
-local function VYTIXXW_fake_script() -- ax.Scripthandler 
+coroutine.wrap(ZETSKV_fake_script)()
+local function SNKTFK_fake_script() -- ax.Scripthandler 
 	local script = Instance.new('LocalScript', ax)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.Prompt.Visible = true
-		script.Parent.Parent.Parent.Parent.Prompt.TextLabel.Text = "Gui Toggle: z"
-		script.Parent.Parent.Parent.Parent.Prompt.Visible = false
 		_G.Toggle_GUI = "z" -- keybind to open/close gui
 	
 	--[[ Credits - MrQuack#8010  Showcase - SMOKEZ SQUAD 
@@ -456,15 +453,20 @@ local function VYTIXXW_fake_script() -- ax.Scripthandler
 		loadstring(game:HttpGet("https://pastebin.com/raw/mtrRP1H1", true))()
 	
 	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Prompt.Visible = true
+		script.Parent.Parent.Parent.Parent.Prompt.TextLabel.Text = "Gui Toggle: z"
+		script.Parent.Parent.Parent.Parent.Prompt.Visible = false
+	end)
 end
-coroutine.wrap(VYTIXXW_fake_script)()
-local function SDBGWMD_fake_script() -- TextButton_2.Scripthandler 
+coroutine.wrap(SNKTFK_fake_script)()
+local function UTJCY_fake_script() -- TextButton_2.Scripthandler 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(SDBGWMD_fake_script)()
+coroutine.wrap(UTJCY_fake_script)()
 
 end
